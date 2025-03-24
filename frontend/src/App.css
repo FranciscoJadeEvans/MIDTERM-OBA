@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e5e7eb; /* Tailwind's bg-gray-200 equivalent */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-color: #000000;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.651);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  width: 400px;
+  position: relative;
+  opacity: 90%;
+  z-index: 10;
+}
+
+.logo-background {
+  position: absolute;
+  inset: 0;
+  background: url('./logo.svg') no-repeat center;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 0;
+}
